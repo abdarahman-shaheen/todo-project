@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./reset.css">
+<link rel="stylesheet" href="./style.css">
     <title>Todo list</title>
 </head>
 <body>
     <header>
-        <section>
+        <section >
             <img src="./assets/logo.png">
             <h1>Todo  list</h1>
         </section>
-        <section>
+        <section >
             <nav>
                 <ul>
                     <li><a href="./index.html">All Task</a></li>
@@ -26,16 +28,16 @@
         <h2>Lets do it all Task</h2>
         <table border="1">
             <tr>
-                <td>Task</td>
-                <td>Status</td>
-                <td>Task finished</td>    
+                <th>Task</th>
+                <th>Status</th>
+                <th>Task finished</th>    
             </tr>
            
             <tr>
-                <td>Study Math</td><td>Pending</td><td>Eat breakfast</td>
+                <td class="pending">Study Math  <input type="checkbox" class="largerCheckbox"> </td><td>Pending</td><td>Eat breakfast</td>
             </tr>
-            <tr><td>Eat breakfast</td><td>finished</td></tr>
-            <tr><td>Play tennis</td><td>Pending</td></tr>
+            <tr><td class="finished">Eat breakfast <input type="checkbox" class="largerCheckbox"></td><td>finished</td></tr>
+            <tr><td class="pending">Play tennis <input type="checkbox" class="largerCheckbox"></td><td>Pending</td></tr>
             
         </table>
     </main>
