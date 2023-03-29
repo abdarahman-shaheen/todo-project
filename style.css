@@ -1,0 +1,105 @@
+header {
+    
+    width: 100%;
+}
+header img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+header section{
+    display: inline;
+}
+
+header h1 {
+    display: inline;
+    position: relative;
+    top: -30px;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(19, 166, 186);
+  margin-left: 10px;
+  
+}
+nav{float: right;
+margin-top: 40px;}
+
+ul li {
+    display: inline;
+    margin: 20px;
+   font-size: xx-large;
+   
+   padding: 10px;
+   border: rgb(25, 151, 229) solid;
+   
+}
+a { text-decoration: none;}
+main h2 {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    color: white;
+    font-size:90px;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(25, 151, 229);
+    padding-top: 70px;
+}
+
+table{
+    text-align: center;
+    position: relative;
+    left: 35%;
+    margin-top: 10%;
+    background-color: rgb(25, 151, 229);
+    height: 200px;
+    border: rgb(25, 151, 229) solid 20px; ;
+}
+th , td {
+    text-align: center;
+    padding: 50px;
+    border: white solid 3px;
+}
+th{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+}
+td{
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+
+footer{
+    position: relative;
+    top: 200px;
+text-align: center;
+
+
+}
+footer h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size:90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(21, 133, 202);
+    padding: 20px;
+}
+
+.pending{
+    background-color: rgb(238, 57, 37);
+}
+
+.finished{
+    background-color: rgb(72, 255, 0);
+}
+input.largerCheckbox {
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+}
+
