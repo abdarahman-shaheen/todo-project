@@ -1,60 +1,73 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 header {
-    
-    width: 100%;
+  display: flex; 
+  justify-content: space-between;
+  padding: 10px;
 }
 header img {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-header section{
-    display: inline;
+   
 }
 
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#navBar{
+        display: flex;
+        align-items: center;
+      
+        
+}
 header h1 {
-    display: inline;
-    position: relative;
-    top: -30px;
     font-size: xx-large;
     font-weight: bolder;
-    color: rgb(19, 166, 186);
-  margin-left: 10px;
-  
+    color: #12a7ba;
 }
-nav{float: right;
-margin-top: 40px;}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+}
 
 ul li {
-    display: inline;
-    margin: 20px;
    font-size: xx-large;
-   
    padding: 10px;
    border: rgb(25, 151, 229) solid;
-   
 }
-a { text-decoration: none;}
+a { text-decoration: none; color: black;}
+a:hover{
+    color: #12a7ba;;
+}
+main{
+    display: flex; 
+    flex-direction: column;
+align-items: center;
+gap: 20px;
+}
 main h2 {
     width: 100%;
     height: 150px;
     text-align: center;
     color: white;
-    font-size:90px;
-    margin-top: 30px;
+    font-size:5rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(25, 151, 229);
     padding-top: 70px;
 }
 
 table{
-    text-align: center;
-    position: relative;
-    left: 35%;
-    margin-top: 10%;
     background-color: rgb(25, 151, 229);
     height: 200px;
+    width: 60%;
     border: rgb(25, 151, 229) solid 20px; ;
 }
 th , td {
@@ -74,18 +87,15 @@ td{
 }
 
 footer{
-    position: relative;
-    top: 200px;
 text-align: center;
-
 
 }
 footer h3 {
-    width: 100%;
+    align-self: flex-end;
     text-align: center;
     color: white;
-    font-size:90px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:3rem;
+    font-family:  'Arial Narrow', Arial, sans-serif;
     background-color: rgb(21, 133, 202);
     padding: 20px;
 }
@@ -101,5 +111,8 @@ input.largerCheckbox {
     width: 20px;
     height: 20px;
     margin-left: 30px;
+    cursor: pointer;
 }
+
+
 
