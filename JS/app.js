@@ -1,3 +1,5 @@
+'use strict'
+
 let person = prompt("Please enter your name");
 let msr="";
 let gender = prompt("please enter your gender");
@@ -13,15 +15,35 @@ let age = prompt("please enter your age");
 if (age <= 0) {
   alert("your age is less")
 }
-let welcome = confirm("if you wants to skip the welcoming message.")
-if (welcome == false) {
+let welcomeMessage = confirm("if you wants to skip the welcoming message.")
+if (welcomeMessage == false) {
   alert(`Welcome ${msr} ${person}  `)
 }
 else{
-  let wel = confirm('The welcome message without the title')
-if (wel == true) {
+  let welcomeMessage = confirm('The welcome message without the title')
+if (welcomeMessage == true) {
   alert(``);
 }
+}
+
+let marriage = prompt(`${person} are you married`)
+if(marriage==""){
+  marriage="invalid"
+}
+
+let playFootball = prompt(`${person} are you play football`)
+if(playFootball==""){
+  playFootball="invalid"
+}
+let eatVegetables = prompt(`${person} are you eating Vegetables`)
+if(eatVegetables==""){
+  eatVegetables="invalid"
+}
+
+let personQuestion = [marriage,playFootball,eatVegetables]
+
+for (let i = 0; i < personQuestion.length; i++) {
+  console.log(personQuestion[i]);
 }
 
 
