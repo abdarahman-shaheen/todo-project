@@ -1,5 +1,5 @@
 let person = prompt("Please enter your name");
-let msr;
+let msr="";
 let gender = prompt("please enter your gender");
 if (gender.toUpperCase() == "MALE" || gender == "FEMALE") {
   if (gender.toUpperCase() == "MALE") {
