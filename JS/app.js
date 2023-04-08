@@ -1,50 +1,60 @@
 'use strict'
-
-let person = prompt("Please enter your name");
-let msr="";
-let gender = prompt("please enter your gender");
-if (gender.toUpperCase() == "MALE" || gender == "FEMALE") {
-  if (gender.toUpperCase() == "MALE") {
-    msr = "Mr"
+let personQuestion = [];
+let person;
+function welcomeMessage() {
+  let msr = "";
+  person = prompt("Please enter your name");
+  let gender = prompt("please enter your gender");
+  if (gender.toUpperCase() == "MALE" || gender == "FEMALE") {
+    if (gender.toUpperCase() == "MALE") {
+      msr = "Mr"
+    }
+    else {
+      msr = "Ms"
+    }
   }
-  else {
-    msr = "Ms"
+
+  let age = prompt("please enter your age");
+  if (age <= 0) {
+    alert("your age is less")
+  }
+
+
+  let confirmWelcomeMessage = confirm("if you wants to skip the welcoming message.")
+  if (!confirmWelcomeMessage) {
+    alert(`Welcome ${msr} ${person}  `)
   }
 }
-let age = prompt("please enter your age");
-if (age <= 0) {
-  alert("your age is less")
-}
-let welcomeMessage = confirm("if you wants to skip the welcoming message.")
-if (welcomeMessage == false) {
-  alert(`Welcome ${msr} ${person}  `)
-}
-else{
-  let welcomeMessage = confirm('The welcome message without the title')
-if (welcomeMessage == true) {
-  alert(``);
-}
+
+
+function question(arr) {
+  let answer1 = prompt(`${person} are you married`)
+  let answer2 = prompt(`${person} are you play football`)
+  let answer3 = prompt(`${person} are you eating Vegetables`)
+   arr.push(answer1, answer2, answer3)
 }
 
-let marriage = prompt(`${person} are you married`)
-if(marriage==""){
-  marriage="invalid"
+
+function checkAnswer(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == "" || arr[i] == null) {
+      arr[i] = "invalid"
+    }
+
+  }
 }
 
-let playFootball = prompt(`${person} are you play football`)
-if(playFootball==""){
-  playFootball="invalid"
-}
-let eatVegetables = prompt(`${person} are you eating Vegetables`)
-if(eatVegetables==""){
-  eatVegetables="invalid"
+function printAnswer(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
 }
 
-let personQuestion = [marriage,playFootball,eatVegetables]
+welcomeMessage();
+question(personQuestion);
+checkAnswer(personQuestion);
+printAnswer(personQuestion);
 
-for (let i = 0; i < personQuestion.length; i++) {
-  console.log(personQuestion[i]);
-}
 
 
 
