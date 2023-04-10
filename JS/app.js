@@ -19,31 +19,28 @@ function welcomeMessage() {
     alert("your age is less")
   }
 
-
   let confirmWelcomeMessage = confirm("if you wants to skip the welcoming message.")
   if (!confirmWelcomeMessage) {
     alert(`Welcome ${msr} ${person}  `)
   }
 }
 
-
 function question(arr) {
-  let answer1 = prompt(`${person} are you married`)
-  let answer2 = prompt(`${person} are you play football`)
-  let answer3 = prompt(`${person} are you eating Vegetables`)
-   arr.push(answer1, answer2, answer3)
-}
-
-
-function checkAnswer(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == "" || arr[i] == null) {
-      arr[i] = "invalid"
-    }
-
+  let answers=[]
+  let answer1 = prompt(`${person} are you married (yes/no)`);
+  let answer2 = prompt(`${person} are you play football (yes/no)`);
+  let answer3 = prompt(`${person} are you eating Vegetables (yes/no)`);
+answers.push(answer1,answer2,answer3);
+for (let i = 0; i < answers.length; i++) {
+   if(answers[i].toUpperCase()=="YES" || answers[i].toUpperCase()=="NO"){
+  arr.push(answers[i]);
+  }
+  else{
+   arr.push("invalid") 
   }
 }
-
+}
+ 
 function printAnswer(arr) {
   for (let i = 0; i < arr.length; i++) {
     console.log(arr[i]);
@@ -52,13 +49,4 @@ function printAnswer(arr) {
 
 welcomeMessage();
 question(personQuestion);
-checkAnswer(personQuestion);
 printAnswer(personQuestion);
-
-
-
-
-
-
-
-
